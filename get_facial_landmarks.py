@@ -1,5 +1,3 @@
-from pprint import pprint
-
 import face_recognition
 import matplotlib.pyplot as plt
 import numpy as np
@@ -42,4 +40,5 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-F', '--face_path')
     args = parser.parse_args()
+
     get_facial_landmarks(args)
